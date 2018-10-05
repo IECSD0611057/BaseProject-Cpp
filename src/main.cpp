@@ -5,6 +5,7 @@
 int main() {
     printf("Rule Breaker!!!\n");
     printf("5 + 2 = %d\n", addNumber(5, 2));
+    printf("%d\n", equals(5, 5));
     printf("%d\n", getTriangleType(3, 4, 5));
     return 0;
 }
@@ -14,6 +15,12 @@ int addNumber(int a, int b) {
     return a + b;
 }
 
+int equals(int a, int b){
+    if(a == b)
+        return true;
+    else
+        return false;
+}
 int getTriangleType(int a, int b, int c) {
     if (a > b && a > c) {
         int temp = c; c = a; a = temp;
